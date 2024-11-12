@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Quizbuzz - History Quiz</title>
+    <script type="module" src="quiz.js" defer></script>
+</head>
+<body class="min-h-screen bg-gray-100 py-8 px-4">
+    <div class="container mx-auto max-w-3xl">
+        <!-- Header -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h1 class="text-3xl font-bold text-center text-gray-800">World History Quiz</h1>
+            <div class="flex justify-between items-center mt-4">
+                <p class="text-gray-600">Questions: <span class="font-semibold">10</span></p>
+
+            </div>
+        </div>
+
+        <!-- Quiz Form -->
+        <form id="quiz-form" class="space-y-8">
+            <!-- Question 1 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">1. Which empire was ruled by Julius Caesar?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q1" value="a" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Greek Empire</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q1" value="b" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Roman Empire</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q1" value="c" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Persian Empire</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q1" value="d" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Byzantine Empire</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">2. When did World War II end?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q2" value="a" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">1943</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q2" value="b" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">1944</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q2" value="c" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">1945</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q2" value="d" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">1946</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">3. Who was the first Emperor of China?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q3" value="a" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Qin Shi Huang</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q3" value="b" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Sun Yat-sen</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q3" value="c" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Emperor Wu</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q3" value="d" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Emperor Taizong</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">4. The French Revolution began in which year?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q4" value="a" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">1789</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q4" value="b" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">1790</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q4" value="c" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">1791</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q4" value="d" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">1792</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">5. Who wrote "The Art of War"?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q5" value="a" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Confucius</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q5" value="b" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Sun Tzu</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q5" value="c" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Lao Tzu</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q5" value="d" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Mencius</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">6. Which civilization built the Machu Picchu?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q6" value="a" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Mayans</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q6" value="b" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Aztecs</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q6" value="c" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Incas</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q6" value="d" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Olmecs</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">7. Who was the first woman to win a Nobel Prize?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q7" value="a" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Marie Curie</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q7" value="b" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Mother Teresa</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q7" value="c" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Pearl Buck</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q7" value="d" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Jane Addams</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">8. The Great Wall of China was built during which dynasty?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q8" value="a" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Ming Dynasty</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q8" value="b" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Qing Dynasty</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q8" value="c" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Han Dynasty</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q8" value="d" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Tang Dynasty</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">9. What year did the Titanic sink?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q9" value="a" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">1911</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q9" value="b" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">1912</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q9" value="c" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">1913</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q9" value="d" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">1914</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">10. Who was the first President of the United States?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q10" value="a" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">George Washington</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q10" value="b" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Thomas Jefferson</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q10" value="c" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">Abraham Lincoln</span>
+                    </label>
+                    <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q10" value="d" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500">
+                        <span class="ml-3">John Adams</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="flex justify-center">
+                <button id ="quizsubmit" type="submit" class="mt-6 bg-yellow-600 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:bg-yellow-700 transition-colors">Submit Quiz</button>
+            </div>
+        </form>
+    </div>
+    <div id="scoreModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-white rounded-lg shadow-lg p-8 relative max-w-lg">
+            <span class="close-button absolute top-2 right-2 text-red-600 cursor-pointer" id="closeModal">&times;</span>
+            <h2 class="text-2xl">Your Score is <span id="finalScore" class="font-bold text-yellow-500"></span><span class="font-bold text-yellow-500"> /10!</span></h2>
+        </div>
+    </div>
+    
+</body>
+</html>
+    
+
+
